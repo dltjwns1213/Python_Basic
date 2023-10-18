@@ -27,6 +27,7 @@ print("■" * 55)
 print("■■ == 스타벅스 == ")
 print("■■ == ver 1.2")
 while True:
+    addFun(3,4)
     print("="*50)
     print("MSG: 만나서 반갑습니다 고객님")
     print("■■ 메인 메뉴")
