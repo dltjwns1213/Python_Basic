@@ -48,12 +48,27 @@ while True:
             print("MSG: 입고 불가, 다른 곳으로 가..")
     elif select_num == 2:  # 출고
         # 1.차량 번호
+        car_num = input(">>출고 ")
         # 2.주차 타워 check 차량번호
+        if car_num in tower: # True -> 차량이 존재
+            for i, car in enumerate(tower):
+                if car == car_num: # 출고
+                    tower[i] = "" # 타워에서 차량제거
+                    car_cnt -= 1
+                    break
+        else: # False -> 차량 X
+            print("MSG: 해당번호로 입고 된 차량이 없습니다.")
+
         #   2-1 X: 차 없음..
         #   2-2 출고(tower 값 = > 
         pass
     elif select_num == 3:  # 조회
+        print("== 주차 타워 현황 ==")
+        for i in range(len(tower)-1,-1,-1):
+            print(f"> {i+1}층 {tower[i]}")
         pass
     elif select_num == 4:  # 종료
         print("MSG: 프로그램을 종료합니다.")
         exit()
+    #가로 출력
+    #print(1, end=" ")
