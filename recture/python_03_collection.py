@@ -113,7 +113,7 @@ print(a)    # 8
 print(b)    # 5
 
 # 3. 세트(Set) Ex) 복주머니, 가방
-# - 수학의 집합 개념
+# - 수학의 잡합 개념
 # - 순서 없음(index 없음, 정렬 불가능)
 # - 중복값을 허용하지 않음(중요⭐️)
 # - {} 사용
@@ -183,24 +183,12 @@ print(a.values())   # value만 추출
 print(a.items())    # (key, value) 추출
 
 print(list(a.keys())) # 활용 방법(중요⭐️)
+
 # clear() : dict 초기화
 print(a)
 a.clear()
 print(a)
 
-# 숙제 아닌 숙제?
+# 숙제 아닌 숙제? 
 a = {}
 print(type(a))
-
-# 컬렉션 타입
-# 1. List[] -> 수정 가능
-# - insert(인덱스, 값), append(값), remove(값), pop(인덱스), expand(확장),
-# - sort() 원본값에서 정렬
-# - sorted() 원본값 복사 후 정렬
-# 2. Tuple() -> 수정 불가(입력, 삭제, 정렬 X)
-# - ()를 생략 가능 ( (1) -> 1, )
-# 3. Dict {key:value}
-# ->  = JSON(데이터 전송 포맷)
-# 4. set {}
-# -> 중복값 허용 X, 중복값 제거할 때 사용
-# 매우 중요
